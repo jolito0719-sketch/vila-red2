@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vila-Red | Servicio eléctrico en Castellón y Valencia</title>
+  <meta name="description" content="Vila-Red: servicio eléctrico oficial en Castellón y Valencia. Mantenimiento, electricidad general, boletines, inspecciones técnicas y reformas eléctricas.">
+  <meta name="theme-color" content="#e86606">
+  <link rel="icon" href="assets/logo-nav.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#inicio" aria-label="Vila-Red, ir al inicio">
+        <img src="assets/logo-nav.png" alt="" width="58" height="80">
+        <span class="logo-word">VILA-<span class="accent">RED</span></span>
+      </a>
+
+      <nav aria-label="Principal">
+        <ul class="nav__links">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav__menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <img src="assets/icon-menu.svg" alt="" width="48" height="48">
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <img class="hero__bg" src="assets/hero.png" alt="" width="1024" height="683" fetchpriority="high">
+      <div class="hero__content">
+        <p class="hero__pill">Servicio eléctrico oficial en todo Castellón y Valencia</p>
+        <h1 class="hero__title">
+          <span>Conectamos tu energía,</span>
+          <span><span class="accent">Aseguramos</span> tu confort</span>
+        </h1>
+        <div class="hero__actions">
+          <a class="btn btn--orange" href="tel:+34600000000">Llámanos</a>
+          <a class="btn btn--outline" href="#contacto">Escríbenos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="servicios" aria-labelledby="servicios-title">
+      <h2 class="services__title" id="servicios-title">
+        Servicios eléctricos de primer nivel para tu <span class="accent">negocio</span> o <span class="accent">vivienda</span>
+      </h2>
+
+      <ul class="services__grid">
+        <li class="card card--mantenimiento" tabindex="0">
+          <div class="card__media"><img src="assets/mantenimiento.jpg" alt="Técnico midiendo un cuadro eléctrico con un multímetro" loading="lazy"></div>
+          <img class="card__icon card__icon--bolt" src="assets/icon-bolt.svg" alt="">
+          <h3 class="card__title">Mantenimiento eléctrico</h3>
+          <p class="card__desc">Soluciones de mantenimiento preventivo y correctivo en comunidades, espacios públicos y locales comerciales.</p>
+        </li>
+        <li class="card card--electricidad" tabindex="0">
+          <div class="card__media"><img src="assets/electricidad.jpg" alt="Bombillas de filamento colgando del techo" loading="lazy"></div>
+          <img class="card__icon card__icon--bulb" src="assets/icon-bulb.svg" alt="">
+          <h3 class="card__title">Electricidad general</h3>
+          <p class="card__desc">Instalamos, reparamos y mejoramos todo tipo de espacios: hogares, negocios, naves y comunidades.</p>
+        </li>
+        <li class="card card--boletines" tabindex="0">
+          <div class="card__media"><img src="assets/boletines.png" alt="Plano eléctrico de una cocina" loading="lazy"></div>
+          <img class="card__icon card__icon--doc" src="assets/icon-document.svg" alt="">
+          <h3 class="card__title">Boletines y proyectos</h3>
+          <p class="card__desc">Certificados y boletines eléctricos: legalización garantizada conforme a la ley.</p>
+        </li>
+        <li class="card card--inspecciones" tabindex="0">
+          <div class="card__media"><img src="assets/inspecciones.jpg" alt="Técnico revisando el cableado de un cuadro de contactores" loading="lazy"></div>
+          <img class="card__icon card__icon--gafas" src="assets/icon-gafas.svg" alt="">
+          <h3 class="card__title">Inspecciones técnicas</h3>
+          <p class="card__desc">Gestión de inspecciones OCA y adecuación técnica a la normativa vigente.</p>
+        </li>
+        <li class="card card--reformas" tabindex="0">
+          <div class="card__media"><img src="assets/reformas.jpg" alt="Habitación en obra con nueva instalación eléctrica" loading="lazy"></div>
+          <img class="card__icon card__icon--reformas" src="assets/icon-reformas.svg" alt="">
+          <h3 class="card__title">Reformas eléctricas</h3>
+          <p class="card__desc">y adecuación de instalaciones existentes</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- NOSOTROS (fondo shader animado) -->
+    <section class="about" id="nosotros" aria-labelledby="nosotros-title">
+      <canvas class="about__shader" aria-hidden="true"></canvas>
+
+      <div class="about__inner">
+        <div class="about__media">
+          <img class="about__photo" src="assets/nosotros.png" alt="Electricista trabajando con alicates en un cuadro eléctrico" width="565" height="390" loading="lazy">
+          <img class="about__logo" src="assets/logo-nosotros.png" alt="Logotipo de Vila-Red" width="180" height="179" loading="lazy">
+        </div>
+
+        <div class="about__copy">
+          <h2 class="about__title" id="nosotros-title">Compromiso, cercanía y máxima calidad</h2>
+          <p class="about__text">
+            &nbsp;En <span class="accent">Vila-Red,</span> nacemos con el propósito de ofrecer soluciones eléctricas integrales y eficientes, adaptadas a las necesidades reales de cada cliente y respaldadas por los más altos estándares de seguridad y normativa.<br>Nuestro objetivo es construir relaciones de confianza a través de un trato transparente, directo y profesional. Ya sea una instalación en el hogar, un proyecto comercial, una comunidad de propietarios o una nave industrial, cuidamos cada detalle para garantizar resultados duraderos y seguros.<br>Contamos con un equipo técnico altamente cualificado y preparado para responder con agilidad ante cualquier reto o avería. En Vila-Red combinamos métodos modernos con una vocación de servicio clara: que la energía de tu espacio funcione siempre a la perfección.
+          </p>
+        </div>
+      </div>
+
+      <div class="about__contact-title">
+        <h2 id="contacto-title">
+          <a class="about__phone" href="tel:+34600000000" aria-label="Llamar al +34 600 000 000">
+            <img src="assets/icon-telefono.svg" alt="" width="100" height="127">
+          </a>
+          Contáctanos
+        </h2>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto" aria-labelledby="contacto-title">
+      <div class="contact__left">
+        <form class="contact__form" novalidate>
+          <label class="visually-hidden" for="f-nombre">Nombre</label>
+          <input class="field field--half" id="f-nombre" name="nombre" type="text" placeholder="Nombre" autocomplete="name" required>
+
+          <label class="visually-hidden" for="f-telefono">Teléfono</label>
+          <input class="field field--half" id="f-telefono" name="telefono" type="tel" placeholder="Teléfono" autocomplete="tel">
+
+          <label class="visually-hidden" for="f-email">Email</label>
+          <input class="field field--full" id="f-email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+
+          <label class="visually-hidden" for="f-mensaje">¿Cuál es su problema?</label>
+          <textarea class="field field--area" id="f-mensaje" name="mensaje" placeholder="¿Cuál es su problema?" required></textarea>
+
+          <div class="contact__actions">
+            <button class="btn btn--red" type="submit">Enviar</button>
+            <p class="contact__status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="contact__right">
+        <p class="contact__lead">
+          Cuéntanos qué necesitas o <span class="accent">cuál es tu avería</span> y te responderemos <span class="accent">lo antes posible.</span>
+        </p>
+        <address class="contact-info">
+          <p>Dirección: xxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p><a href="mailto:info@vilared.es">info@vilared.es</a></p>
+          <p><a href="https://wa.me/34600000000" target="_blank" rel="noopener">+34 600 000 000 (También Whatsapp)</a></p>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright <img src="assets/copyright.png" alt="©" width="26" height="26"> Vila-Red SL 2026</p>
+  </footer>
+
+  <!-- MENÚ LATERAL -->
+  <div class="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="drawer" id="menu" aria-label="Menú" aria-hidden="true" inert>
+    <button class="drawer__close" type="button" aria-label="Cerrar menú">
+      <img src="assets/icon-close.svg" alt="" width="48" height="48">
+    </button>
+    <ul class="drawer__links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <address class="contact-info">
+      <p>Dirección: xxxxxxxxxxxxxxxxxxxxxxx</p>
+      <p><a href="mailto:info@vilared.es">info@vilared.es</a></p>
+      <p><a href="https://wa.me/34600000000" target="_blank" rel="noopener">+34 600 000 000 (También Whatsapp)</a></p>
+    </address>
+  </aside>
+
+  <script src="js/shader-moving-gradient.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
