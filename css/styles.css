@@ -498,7 +498,7 @@ textarea {
 }
 
 /* =========================================================
-   NOSOTROS — fondo shader (76:38) 1440 × 1208
+   NOSOTROS — fondo degradado (76:38) 1440 × 1208
    ========================================================= */
 .about {
   position: relative;
@@ -506,26 +506,16 @@ textarea {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* Degradado de respaldo si WebGPU no está disponible */
-  background:
-    radial-gradient(60% 45% at 82% 32%, rgba(255, 255, 255, 0.95) 0 30%, rgba(255, 255, 255, 0) 75%),
-    radial-gradient(70% 55% at 30% 18%, rgba(247, 196, 166, 0.9) 0%, rgba(247, 196, 166, 0) 70%),
-    radial-gradient(80% 50% at 50% 100%, #e86606 0%, rgba(232, 102, 6, 0) 75%),
-    radial-gradient(60% 55% at 0% 72%, #ee8545 0%, rgba(238, 133, 69, 0) 80%),
-    linear-gradient(180deg, #fff 0%, #fff7f2 45%, #f4b48a 100%);
-}
-
-.about__shader {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.8s ease;
-}
-
-.about__shader.is-ready {
-  opacity: 1;
+  /* Degradado fijo con el estilo del "Moving gradient" de Figma (nodo 76:38) */
+  background-color: #fbe6d9;
+  background-image:
+    radial-gradient(38% 30% at 50% 100%, #e86606 0%, rgba(232, 102, 6, 0.55) 50%, rgba(232, 102, 6, 0) 100%),
+    radial-gradient(40% 34% at 100% 92%, rgba(244, 160, 112, 0.95) 0%, rgba(244, 160, 112, 0) 100%),
+    radial-gradient(36% 30% at 0% 68%, rgba(239, 130, 72, 0.9) 0%, rgba(239, 130, 72, 0) 100%),
+    radial-gradient(30% 22% at 68% 26%, rgba(252, 228, 214, 0.9) 0%, rgba(252, 228, 214, 0) 100%),
+    radial-gradient(48% 36% at 70% 40%, #ffffff 40%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(34% 28% at 22% 9%, rgba(247, 196, 165, 0.95) 0%, rgba(247, 196, 165, 0) 100%),
+    linear-gradient(24deg, #ef8448 0%, #f39b69 28%, #fbd8c3 46%, #ffffff 60%, #ffffff 82%, #fdf3ed 100%);
 }
 
 .about__inner {
